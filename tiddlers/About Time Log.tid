@@ -1,5 +1,5 @@
 created: 20181114000449337
-modified: 20181115184318671
+modified: 20181115185706582
 tags: 
 title: About Time Log
 type: text/vnd.tiddlywiki
@@ -21,3 +21,5 @@ Thanks:
 * Thanks to everyone in the [[Google Tiddlywiki group |https://groups.google.com/forum/#!forum/tiddlywiki]]who have answered my questions. Especially:
 ** Thomas Elmiger who's great RPN math plugin and [[example code|https://groups.google.com/d/msg/tiddlywiki/9oXreSW8IJs/g8jYGGfVAQAJ]] got me most of the way. 
 ** TonyM and Mohammad for helping my sort through my New Timer button syntax.
+
+This Tiddlywiki on GitHub: https://github.com/TechLifeWeb/timelog
