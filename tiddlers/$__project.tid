@@ -1,0 +1,16 @@
+created: 20181112234659039
+modified: 20181115182728259
+tags: 
+title: $:/project
+type: text/vnd.tiddlywiki
+
+Total time spent on {{!!title}}: {{$:/temp/telmiger/rpn/result!!time_total}}
+
+<<rpnFields filter:"[prefix[{{!!title}}:]]" field:"time_used" saveTo:"" saveField:"time_total" label:"Add all">>
+<$button message="tm-delete-tiddler" param="$:/temp/telmiger/rpn/result">
+Reset
+</$button>
+
+<<newTid param:"$(currentTiddler)$">>
+<hr>
+<<tabs "[[Running Timers]] [[History]]" "Running Timers">>

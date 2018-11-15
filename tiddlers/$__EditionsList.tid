@@ -1,0 +1,48 @@
+created: 20181114004430313
+modified: 20181114004430313
+title: $:/EditionsList
+type: application/json
+
+{
+  "aws": "Amazon Web Services edition",
+  "classicparserdemo": "Demo of the experimental TiddlyWiki Classic parser plugin",
+  "codemirrordemo": "Demo of the CodeMirror plugin",
+  "d3demo": "Demo of the D3 plugin",
+  "de-AT-server": "Server configuration of the German (Österreich) edition",
+  "de-AT": "Deutsch (Österreich) Edition",
+  "de-DE": "Deutsche Basis Edition",
+  "dev": "Developer documentation from https://tiddlywiki.com/dev/",
+  "empty": "Empty edition",
+  "es-ES-server": "Configuración en modo servidor de la edición es-ES",
+  "es-ES": "Spanish (Spain) edition",
+  "fr-FR-server": "Configuration en mode serveur de l'édition fr-FR",
+  "fr-FR": "French (France) edition",
+  "full": "Full edition, containing all languages, themes and plugins",
+  "highlightdemo": "Demo of the highlight plugin",
+  "introduction": "A step by step introduction to TiddlyWiki",
+  "ja-JP": "Japanese (Japan) edition",
+  "katexdemo": "Demo of the KaTeX plugin",
+  "ko-KR-server": "Server configuration of the Korean (Korea Republic) edition",
+  "ko-KR": "Korean (Korea Republic) edition",
+  "markdowndemo": "Demo of the Markdown plugin",
+  "pluginlibrary": "TiddlyWiki Plugin Library",
+  "prerelease": "Content for the current prerelease",
+  "resumebuilder": "Resume builder edition",
+  "server": "Basic client-server edition",
+  "tahoelafs": "Demo of TahoeLAFS plugin",
+  "test": "TiddlyWiki core tests",
+  "testcommonjs": "TiddlyWiki Common-JS tests",
+  "text-slicer": "Tools for slicing up long texts into individual tiddlers",
+  "translators": "Edition for people translating TiddlyWiki",
+  "tw5.com-docs": "Documentation from tw5.com edition",
+  "tw5.com-server": "Server configuration of the tw5.com edition",
+  "tw5.com": "Documentation from https://tiddlywiki.com",
+  "tw5tank": "Demo of Tank integration",
+  "tw5tiddlyweb": "Base edition for TiddlySpace integration",
+  "upgrade": "TiddlyWiki upgrader edition",
+  "xlsx-utils-server": "Server configuration of the xlsx-utils edition",
+  "xlsx-utils": "Demo of the XLSX utilities plugin",
+  "zh-Hans": "Chinese (Simplified) edition",
+  "zh-Hant": "Chinese (Traditional) edition",
+  "Bob": "Bob index edition"
+}

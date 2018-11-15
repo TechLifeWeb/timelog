@@ -1,0 +1,24 @@
+created: 20181112220437407
+modified: 20181115011902996
+time_used: 3074
+title: $:/timer
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!tag[done]]">
+<$wikify name="start" text="<<minutesSince created>>">
+
+Minutes since created: <<start>>
+
+<$button>
+<$action-listops $field="tags" $subfilter="done"/>
+<$action-setfield time_used=<<start>>/>
+
+Click to tag done!
+
+</$button>
+</$wikify>
+
+</$list>
+<$list filter="[all[current]tag[done]]">
+Minutes spent on this timer: {{!!time_used}}
+</$list>

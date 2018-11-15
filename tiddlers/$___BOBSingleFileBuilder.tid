@@ -1,0 +1,10 @@
+created: 20181113235030416
+modified: 20181114004430428
+tags: 
+title: $:/_BOBSingleFileBuilder
+type: text/vnd.tiddlywiki
+
+<$button>
+Build HTML Wiki
+<$action-websocketmessage $type='buildHTMLWiki'/>
+</$button>

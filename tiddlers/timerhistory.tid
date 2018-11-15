@@ -1,0 +1,16 @@
+created: 20181115173423636
+modified: 20181115181840051
+tags: 
+title: timerhistory
+type: text/vnd.tiddlywiki
+
+\define MyFilter()
+[tag[$(MyTag)$]tag[$(OtherTag)$]!sort[created]]
+\end
+ 
+<$set name="MyTag" value={{!!title}}>
+<$set name="OtherTag" value='done'>
+<$list filter=<<MyFilter>>>
+<div class="tc-menu-list-item">
+<$link to={{!!title}}><$view field="title"/> - <$view field="created" format="date" template="YYYY-0MM-0DD 0hh:0mm:0ss"/></$link>
+</div></$list></$set>

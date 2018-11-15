@@ -1,0 +1,21 @@
+created: 20181114214136967
+modified: 20181115005243989
+tags: $:/tags/Macro
+title: $:/newtimerbutton
+type: text/vnd.tiddlywiki
+
+\define newTid(param:"", btn-caption:"Start new timer for {{!!title}}", color:"#8058A5") 
+<$button style="color:$color$; fill:$color$; margin-bottom:5px;">
+{{$:/core/images/new-button}} $btn-caption$
+
+
+<$wikify name="newTitle" text="""{{!!title}}: timer""">
+<$action-createtiddler 
+    $basetitle=<<newTitle>>
+    text="{{||$:/timer}}"
+    tags="[[$param$]] timer"
+   time_used=0
+/>
+</$wikify>
+</$button>
+\end

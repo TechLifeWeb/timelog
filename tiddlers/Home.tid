@@ -1,0 +1,28 @@
+created: 20180730182317007
+creator: skingery
+modified: 20181114004430179
+modifier: TechLifeWeb
+tags: 
+title: Home
+type: text/vnd.tiddlywiki
+
+\define MyFilter()
+[tag[$(MyTag)$]!tag[$(MyNotTag)$]sort[title]]
+\end
+[[About Time Log]]
+
+{{||$:/TaggedThisTitle}}
+
+<hr>
+<$button>New Project
+<$action-sendmessage $message="tm-new-tiddler" text='{{||$:/project}}' tags={{!!title}} title='New Project'/>
+</$button>
+
+<hr>
+Any timers you have running will appear here:
+<$set name="MyTag" value=timer>
+<$set name="MyNotTag" value='done'>
+<$list filter=<<MyFilter>>>
+<div class="tc-menu-list-item">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div></$list></$set>

@@ -1,0 +1,15 @@
+created: 20180708051108913
+modified: 20181114004430212
+tags: 
+title: $:/TaggedThisTitle
+type: text/vnd.tiddlywiki
+
+\define MyFilter()
+[tag[$(MyTag)$]sort[title]]
+\end
+
+<$set name="MyTag" value={{!!title}}>
+<$list filter=<<MyFilter>>>
+<div class="tc-menu-list-item">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div></$list></$set>

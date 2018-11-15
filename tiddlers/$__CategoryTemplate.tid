@@ -1,0 +1,7 @@
+created: 20180707045249295
+modified: 20181114004430401
+tags: 
+title: $:/CategoryTemplate
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="$:/category">

@@ -1,0 +1,8 @@
+created: 20180727032651039
+modified: 20181114004430369
+tags: 
+title: $:/config/Plugins/csv-unpack/field-map
+type: text/vnd.tiddlywiki
+
+Column A:title
+Column B:text
