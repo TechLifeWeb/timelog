@@ -1,0 +1,17 @@
+created: 20181127235555369
+modified: 20181127235603619
+revision: 0
+tags: 
+title: running
+type: text/vnd.tiddlywiki
+
+\define MyFilter()
+[tag[$(MyTag)$]!tag[$(MyNotTag)$]sort[title]]
+\end
+
+<$set name="MyTag" value={{!!title}}>
+<$set name="MyNotTag" value='done'>
+<$list filter=<<MyFilter>>>
+<div class="tc-menu-list-item">
+<$link to={{!!title}}><$view field="title"/></$link>
+</div></$list></$set>

@@ -1,16 +1,8 @@
 created: 20181113214331928
-modified: 20181115173417064
+modified: 20181127235650162
+revision: 0
 tags: 
 title: timer
 type: text/vnd.tiddlywiki
 
-\define MyFilter()
-[tag[$(MyTag)$]!tag[$(MyNotTag)$]sort[title]]
-\end
-
-<$set name="MyTag" value={{!!title}}>
-<$set name="MyNotTag" value='done'>
-<$list filter=<<MyFilter>>>
-<div class="tc-menu-list-item">
-<$link to={{!!title}}><$view field="title"/></$link>
-</div></$list></$set>
+<$transclude tiddler="$:/TaggedThisTitle">

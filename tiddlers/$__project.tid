@@ -1,12 +1,24 @@
 created: 20181112234659039
-modified: 20181115182728259
+modified: 20181127235149872
+revision: 0
 tags: 
 title: $:/project
 type: text/vnd.tiddlywiki
 
-Total time spent on {{!!title}}: {{$:/temp/telmiger/rpn/result!!time_total}}
+<$wikify name="start" text={{$:/temp/telmiger/rpn/result!!time_total}}>
+<$wikify name="grandtotal" text={{$:/temp/telmiger/rpn/result!!grand_total}}>
+<$wikify name="hourcompute" text='<$macrocall $name=rpn a=<<start>> b=60 operation="/" decimals="2"/>'>
+<$wikify name="percentage" text='<$macrocall $name=rpn a=<<start>> b=<<grandtotal>> operation="/" decimals="4"/>'>
+<$wikify name="tpercentage" text='<$macrocall $name=rpn a=<<percentage>> b=100 operation="*" decimals="4"/>'>
 
-<<rpnFields filter:"[prefix[{{!!title}}:]]" field:"time_used" saveTo:"" saveField:"time_total" label:"Add all">>
+Total time spent on {{!!title}}: {{$:/temp/telmiger/rpn/result!!time_total}} minutes of {{$:/temp/telmiger/rpn/result!!grand_total}} working
+
+or <<hourcompute>> hours 
+
+<<tpercentage>>% of your time is spent on {{!!title}}
+
+<<rpnFields filter:"[prefix[{{!!title}}:]]" field:"time_used" saveTo:"" saveField:"time_total" label:"Add all {{!!title}}">>
+<<rpnFields filter:"[tag[timer]]" field:"time_used" saveTo:"" saveField:"grand_total" label:"Grand Total">>
 <$button message="tm-delete-tiddler" param="$:/temp/telmiger/rpn/result">
 Reset
 </$button>
